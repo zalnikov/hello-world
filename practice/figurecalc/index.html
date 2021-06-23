@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="wrapper">
+    <!-- Калькулятор квадрата -->
+
+    <h1>Калькулятор для вычисления площади и периметра квадрата.</h1>
+    <div class="calcContainer">
+    <img src="img.png" alt="">
+    <div class="calcParam">
+        <div id="select">
+            <select name="select" id="selectValue">
+                <option value="1">Площадь по стороне.</option>
+                <option value="2">Площадь по диагонали.</option>
+                <option value="3">Периметр квадрата по стороне.</option>
+                <option value="4">Периметр квадрата по диагонали.</option>
+            </select>
+        </div>
+        <div class="input">
+            <div class="param">a = </div>
+            <input type="text">
+        </div>
+        <div id="formula">
+            <div class="formula">S = a<sup>2</sup></div>
+            <div id="value"></div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Калькулятор прямоугольника -->
+
+    <h1>Калькулятор для вычисления площади и периметра прямоугольника.</h1>
+    <div class="calcContainer">
+    <img src="rectangle.png" alt="">
+    <div class="calcParam">
+        <div>
+            <select name="select" id="selectValueRec">
+                <option value="1">Площадь прямоугольника.</option>
+                <option value="2">Периметр прямоугольника.</option>
+            </select>
+        </div>
+        <div>
+            <div>a = <input type="text" id="inputRecA"></div>
+            <div>b = <input type="text" id="inputRecB"></div>
+        </div>
+        <input type="button" value="Найти площадь" id="btnRec">
+        <div id="formula">
+            <div class="formulaRec">S = a * b </div>
+            <div id="valueRec"></div>
+        </div>
+        
+    </div>
+    </div>
+
+    <!-- Калькулятор круга. -->
+
+    <h1>Калькулятор для вычисления площади и длинны окружности круга.</h1>
+    <div class="calcContainer">
+    <img src="circle1.png" alt="" id="imgCircle">
+    <div class="calcParam">
+        <div>
+            <select name="select" id="selectValueCircle">
+                <option value="1">Площадь по радиусу.</option>
+                <option value="2">Площадь по диаметру.</option>
+                <option value="3">Площадь по длинне окружности.</option>
+                <option value="4">Длинна окружности.</option>
+            </select>
+        </div>
+        <div class="input">
+            <div id="circleParam">r = </div><input type="text" id="inputCircleValue">
+        </div>
+        <input type="button" value="Найти площадь" id="btnCircle">
+        <div id="formula">
+            <div id="formulaCircle">S = &pi; r<sup>2</sup></div>
+            <div id="resultCircle"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Калькулятор треугольника. -->
+
+    <h1>Калькулятор для вычисления площади треугольника.</h1>
+    <div class="calcContainer">
+    <img src="triangle.png" alt="">
+    <div class="calcParam">
+        <div>
+            <div>a = <input type="text" id="inputTriA"></div>
+            <div>b = <input type="text" id="inputTriB"></div>
+            <div>c = <input type="text" id="inputTriC"></div>
+        </div>
+        <input type="button" value="Найти площадь" id="btnTriangle">
+        <div>
+            <div class="formulaTriangle">
+                <div id="formulaTriangleP">P = (a + b + c)/2</div><div id="resultTriangleP"></div>
+            </div>
+            <div class="formulaTriangle">
+                <div id="formulaTriangleS">S = &#x221a(p * (p - a)(p - b)(p - c))</div><div id="resultTriangleS"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

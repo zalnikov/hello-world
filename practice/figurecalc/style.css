@@ -1,0 +1,25 @@
+img {
+    max-width: 218px;
+}
+.calcContainer {
+    display: flex;
+}
+.calcParam {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.input {
+    display: flex;
+}
+input {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#formula {
+    display: flex;
+    
+}
+.formulaTriangle {
+    display: flex;
+}
