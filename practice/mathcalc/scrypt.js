@@ -1,3 +1,4 @@
+'use strict'
 //Квадратное уравнение.
 let btnQuadEquat = document.querySelector('#btnQuadEquat');
 let resultQuadEquat = document.querySelector('#resultQuadEquat');

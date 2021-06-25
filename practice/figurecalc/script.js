@@ -1,3 +1,4 @@
+'use strict'
 // Калькулятор квадрата
 
 let select = document.querySelector('#selectValue');
