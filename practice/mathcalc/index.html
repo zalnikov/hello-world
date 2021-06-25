@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+
+        <!-- Квадратное уравнение. -->
+        <h1>Математические калькуляторы</h1>
+        <h2>Находим корни квадратного уравнения.</h2>
+        <h3>ax<sup>2</sup> + bx + c = 0</h3>
+        <div class="input">
+            <div class="input_block">
+                <div class="input_param1">
+                    <p>a = </p><input type="text" id="a">
+                </div>
+                <div class="input_param2">
+                    <p>b = </p><input type="text" id="b">
+                </div>
+                <div class="input_param3">
+                    <p>c =</p><input type="text" id="c">
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="Расчёт" id="btnQuadEquat">
+        </div>
+        <div class="result">
+            <span id="resultQuadEquat"></span>
+        </div>
+
+        <!-- Тройка Пифагора. -->
+
+        <h2>Проверка на "Тройку Пифагора".</h2>
+        <h3>x<sup>2</sup> + y<sup>2</sup> = z<sup>2</sup></h3>
+        <div class="input">
+            <div class="input_block" id="inputPythTriplet">
+                <div class="input_param1">
+                    <input type="text">
+                </div>
+                <div class="input_param1">
+                    <input type="text">
+                </div>
+                <div class="input_param1">
+                    <input type="text"">
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="Расчёт" id="btnPythTriplet">
+        </div>
+        <div class="result">
+            <span id="resultPythTriplet"></span>
+        </div>
+    </div>
     
+<script src="scrypt.js"></script>
 </body>
 </html>

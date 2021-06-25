@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input_param1, .input_param2, .input_param3 {
+    display: flex;
+    margin: 10px 0;
+}
+p {
+    margin: 0 10px;
+}
+.button {
+    text-align: center;
+}
+.result {
+    margin: 10px 0;
+}
