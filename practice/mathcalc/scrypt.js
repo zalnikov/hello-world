@@ -1,4 +1,4 @@
-'use strict'
+'Use strict'
 //Квадратное уравнение.
 let btnQuadEquat = document.querySelector('#btnQuadEquat');
 let resultQuadEquat = document.querySelector('#resultQuadEquat');
@@ -49,4 +49,67 @@ btn.addEventListener ('click', () => {
     } else {
         resultPythTriplet.innerHTML = 'Эти числа НЕ являются тройкой Пифагора.'
     }
+})
+
+// Делитель числа.
+
+let inputDivisor = document.querySelector("#inputDivisor");
+let btnDivisor = document.querySelector('#btnDivisor');
+let resultDivisor = document.querySelector('#resultDivisor');
+
+function divisor(number) {
+    let arr = [];
+    for (let i = 1; i <= number; i++) {
+        if (number % i == 0) {
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+btnDivisor.addEventListener('click', () => {
+    resultDivisor.innerHTML = divisor(inputDivisor.value).join('-');
+})
+
+// Общие делаители.
+
+let inputGCDOne = document.querySelector('#inputGCDOne');
+let inputGCDTwo = document.querySelector('#inputGCDTwo');
+let btnGCD = document.querySelector('#btnGCD');
+let resultGCD = document.querySelector('#resultGCD');
+
+function greatestCommonDivisor(numberOne, numberTwo) {
+    let arr1 = divisor(numberOne);
+    let arr2 = divisor(numberTwo);
+    let intersection = arr1.filter(x => arr2.includes(x));
+    return intersection;
+}
+
+btnGCD.addEventListener('click', () => {
+    resultGCD.innerHTML = greatestCommonDivisor(inputGCDOne.value, inputGCDTwo.value).join('-');
+})
+
+// Наибольший общий делитель чисел.
+
+let inputMaxGCDOne = document.querySelector('#inputMaxGCDOne');
+let inputMaxGCDTwo = document.querySelector('#inputMaxGCDTwo');
+let btnMaxGCD = document.querySelector('#btnMaxGCD');
+let resultMaxGCD = document.querySelector('#resultMaxGCD');
+
+btnMaxGCD.addEventListener('click', () => {
+    let strDivisor = greatestCommonDivisor(inputMaxGCDOne.value, inputMaxGCDTwo.value);
+    resultMaxGCD.innerHTML = Math.max(...strDivisor);
+})
+
+// Наименьшее общее кратное.
+
+let inputLCMOne = document.querySelector('#inputLCMOne');
+let inputLCMTwo = document.querySelector('#inputLCMTwo');
+let btnLCM = document.querySelector('#btnLCM');
+let resultLCM = document.querySelector('#resultLCM');
+
+btnLCM.addEventListener('click', () => {
+    let strDivisor = greatestCommonDivisor(inputLCMOne.value, inputLCMTwo.value);
+    let resultGCD = Math.max(...strDivisor);
+    resultLCM.innerHTML = (inputLCMOne.value * inputLCMTwo.value)/resultGCD;
+
 })
