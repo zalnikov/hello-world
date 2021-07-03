@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden
+}
+.container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: 20px 0;
+}
+p {
+    max-width: 300px;
+    text-align: justify;
+    margin: 20px 0;
+}
+input[type="button"] {
+    margin: 10px 0;
+}
+div #answer {
+    height: 10px;
+}
