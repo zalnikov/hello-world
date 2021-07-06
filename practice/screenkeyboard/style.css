@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+
+}
+.container {
+    position:absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    width: 400px;
+    height: 40px;
+    margin: 6px 0;
+    font-size: 30px;
+    padding: 2px;
+}
+.keyboard {
+    display: flex;
+    flex-direction: column;
+}
+.keyboardLine {
+    display: flex;
+}
+.key {
+    width: 36px;
+    height: 36px;
+    border: 1px black solid;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 4px;
+}
+.key:hover {
+    color: #fff;
+    background: slategray;
+    cursor: pointer;
+}
+.backspace {
+    width: 80px;
+}
+.enter {
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    height: 90px;
+}
+.leftShift {
+    width: 90px;
+}
+.rightShift {
+    width: 134px;
+}
+.keyboardLine {
+    display: flex;
+}
+.space {
+    flex-grow: 1;
+}
+.context {
+    width: 54px;
+}
+.capsLockDown {
+    color: #fff;
+    background: slategray;
+}
