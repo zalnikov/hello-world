@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc {
+    display: flex;
+    flex-direction: column;
+    height: 366px;
+    width: 240px;
+    border: 1px black solid;
+    border-radius: 8px;
+    background-color: darkgray;
+}
+.calcDisplay {
+    height: 34px;
+    margin: 12px;
+    padding: 4px;
+    text-align: end;
+    border: 1px black solid;
+    background-color: #fff;
+}
+#calcDisplayStr {
+    height: 14px;
+}
+.keyLine {
+    display: flex;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 4px;
+    border: 1px black solid;
+    border-radius: 4px;
+}
+
+.key:hover {
+    color:white;
+    background-color: gray;
+    cursor: pointer;
+}
