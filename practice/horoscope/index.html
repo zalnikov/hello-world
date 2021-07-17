@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Гороскоп.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="horoscope">
+            <h1>Гороскоп.</h1>
+            <span>Введите дату вашего рождения.</span>
+            <input type="date" name="" id="inputBirthday">
+            <div class="radioBtn">
+                <label><input type="radio" name="horoscope" value="yesterday">Вчера</label>
+                <label><input type="radio" name="horoscope" value="today" id="defaultRadio" checked>Сегодня</label>
+                <label><input type="radio" name="horoscope" value="tomorrow">Завтра</label>
+            </div>
+            <div id="text"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
