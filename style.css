@@ -10,6 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: 35% 50%;
+    background-size: 50%;
 }
 .technology {
     width: 100%;
